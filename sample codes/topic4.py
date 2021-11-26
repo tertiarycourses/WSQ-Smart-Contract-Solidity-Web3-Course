@@ -15,8 +15,8 @@ web3 = Web3(Web3.HTTPProvider(ganache_url))
 chain_id = 1337
 
 # Set a default account to sign transaction
-my_address = "0x0fca61a0173FaAec7A64D39c20a1397b361B36B9"
-private_key = '4fa754ce854e8e902916b961df6bcca50dd717875843b2e00f65dd3cfd492ba0'
+my_address = "XXXX"
+private_key = 'XXXX'
 
 with open("./SimpleStorage.sol", "r") as file:
     simple_storage_file = file.read()

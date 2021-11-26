@@ -6,6 +6,11 @@ pragma solidity >=0.7.0 <0.9.0;
 
 contract Hello {  
     uint256 public myNum;
+
+    modifier onlyOwner {
+        require(msg.sender == owner);
+        _;
+    }
     
     function store(uint256 _myNum) public {
          myNum = _myNum;
@@ -482,7 +487,8 @@ contract MyToken is ERC20Token  {
     string public symbol;
     address[] public owners;
      
-   constructor(string memory _symbol)  {
+    constructor(string memory _symbol, string memory _name)  {
+        name = _name;
         symbol = _symbol;
     }
     
