@@ -234,7 +234,7 @@ print(tx_receipt.contractAddress)
 
 # # # # Display the default greeting from the contract
 print('Default contract value: {}'.format(
-    contract.functions.getBalance('0xCF716fAE671155d9663a8D2aC46BbBA4B537265d').call()
+    contract.functions.getBalance('XXXXX').call()
 ))
 
 print(contract.functions.symbol().call())
@@ -248,7 +248,7 @@ web3.eth.waitForTransactionReceipt(tx_hash)
 
 # # Display the new greeting value
 print('Updated contract value: {}'.format(
-    contract.functions.getBalance('0xCF716fAE671155d9663a8D2aC46BbBA4B537265d').call()
+    contract.functions.getBalance('XXXX).call()
 ))
 
 # Truffle
